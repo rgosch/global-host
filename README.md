@@ -1,7 +1,12 @@
+<p align="center">
+  <a href="https://pokedex.gosch.io/">
+    <img alt="GlobalHost" src="./src/assets/img/logo-primary.svg" width="350" />
+  </a>
+</p>
 <h1 align="center">
-  React Boilerplate
+  GlobalHost
 </h1>
-A simple boilerplate.
+The best Host for your business.
 
 ## Available Scripts
 
