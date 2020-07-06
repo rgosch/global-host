@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyle } from 'visual/styles/GlobalStyle';
 import Routes from 'components/Routes';
 import Header from 'components/Header';
+import PlansProvider from 'contexts/PlansContext';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <GlobalStyle />
       <Router>
         <Header />
-        <Routes />
+        <PlansProvider>
+          <Routes />
+        </PlansProvider>
       </Router>
     </>
   );

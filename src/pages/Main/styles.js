@@ -1,3 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+import { pxToRem } from 'logic/pxToRem';
+
+export const Container = styled.main`
+  margin-top: ${pxToRem(50)};
+`;
