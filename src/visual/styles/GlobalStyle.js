@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { Montserrat } from 'visual/fonts';
+
 export const GlobalStyle = createGlobalStyle`
+  ${Montserrat}
+
   body, html {
     min-height: 100vh;
   }
@@ -9,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
 
