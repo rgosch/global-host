@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-export function Main() {
+function Main() {
   return <Container />;
 }
 
