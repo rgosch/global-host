@@ -9,16 +9,16 @@ export const Wrapper = styled.div`
   
   ${mobile(css`
     width: 90%;
-    max-width: ${RESOLUTIONS.mobile.max};
+    max-width: ${RESOLUTIONS.mobile.max}px;
   `)}
   
   ${tablet(css`
     width: 88%;
-    max-width: ${RESOLUTIONS.tablet.max};
+    max-width: ${RESOLUTIONS.tablet.max}px;
   `)}
   
   ${desktop(css`
     width: 90%;
-    max-width: ${RESOLUTIONS.desktop.min};
+    max-width: ${RESOLUTIONS.desktop.min}px;
   `)}
 `;

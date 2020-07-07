@@ -4,7 +4,7 @@ import PeriodItem from 'components/PeriodSelector/PeriodItem';
 import { PlansContext } from 'contexts/PlansContext';
 import { TEXTS } from 'logic/texts';
 
-import { Container, Content } from './styles';
+import { Container, Content, Title } from './styles';
 
 function PeriodSelector() {
   const { periods } = TEXTS;
@@ -12,6 +12,7 @@ function PeriodSelector() {
 
   return (
     <Container>
+      <Title>{TEXTS.periodTitle}</Title>
       <Content>
         {periods.map(({ id, title }) => (
           <PeriodItem key={id} title={title} id={id} selected={period === id} />

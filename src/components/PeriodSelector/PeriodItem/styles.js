@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
+
 import { pxToRem } from 'logic/pxToRem';
 import { COLORS } from 'visual/constants';
 
 export const Container = styled.label`
   padding: ${pxToRem(10)} ${pxToRem(15)};
-  border-radius: ${pxToRem(42)};
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -13,6 +13,7 @@ export const Container = styled.label`
   }
 
   ${p => p.selected && css`
+    border-radius: ${pxToRem(42)};
     background-color: ${COLORS.primary};
   `}
 `;

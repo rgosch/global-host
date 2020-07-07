@@ -53,7 +53,7 @@ export const Section = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h3`
   font-size: ${pxToRem(22)};
   text-align: center;
   color: ${COLORS.primary};

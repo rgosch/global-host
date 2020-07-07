@@ -6,6 +6,7 @@ export const TEXTS = {
     { id: 'biennially', title: '1 ano' },
     { id: 'monthly', title: '1 mês' },
   ],
+  periodTitle: 'Quero pagar a cada:',
   carousel: {
     equivalent: 'equivalente a',
     byMonth: '/mês*',

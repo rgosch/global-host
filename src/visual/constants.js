@@ -10,13 +10,13 @@ export const COLORS = {
 
 export const RESOLUTIONS = {
   mobile: {
-    max: '736px',
+    max: 736,
   },
   tablet: {
-    min: '737px',
-    max: '1024px',
+    min: 737,
+    max: 1024,
   },
   desktop: {
-    min: '1025px',
+    min: 1025,
   },
 };
