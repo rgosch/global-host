@@ -1,9 +1,10 @@
 import React, { useEffect, useContext } from 'react';
 
 import { Wrapper } from 'visual/styles/Wrapper';
-import SliderCarousel from 'components/SliderCarousel';
-
 import { PlansContext } from 'contexts/PlansContext';
+import SliderCarousel from 'components/SliderCarousel';
+import PeriodSelector from 'components/PeriodSelector';
+
 import { Container } from './styles';
 
 function Main() {
@@ -16,6 +17,7 @@ function Main() {
   return (
     <Container>
       <Wrapper>
+        <PeriodSelector />
         <SliderCarousel />
       </Wrapper>
     </Container>

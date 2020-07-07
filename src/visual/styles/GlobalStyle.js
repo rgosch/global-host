@@ -1,12 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
 import { Montserrat } from 'visual/fonts';
+import { COLORS } from 'visual/constants';
 
 export const GlobalStyle = createGlobalStyle`
   ${Montserrat}
 
   body, html {
     min-height: 100vh;
+    background-color: ${COLORS.secondary};
   }
 
   * {
