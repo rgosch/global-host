@@ -20,6 +20,7 @@ import {
   ParcelSection,
   ParcelAmount,
   Hire,
+  FreeDomain,
 } from './styles';
 
 function Plan({ icon, data, slug }) {
@@ -60,6 +61,7 @@ function Plan({ icon, data, slug }) {
         <Hire as="a" href={link} contrast={isBestSeller}>
           {TEXTS.carousel.hire}
         </Hire>
+        <FreeDomain>{TEXTS.carousel.freeDomain}</FreeDomain>
       </Section>
     </Container>
   );

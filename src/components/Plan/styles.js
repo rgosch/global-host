@@ -85,3 +85,8 @@ export const ParcelAmount = styled.span`
 export const Hire = styled(Button)`
   margin: ${pxToRem(20)} 0;
 `;
+
+export const FreeDomain = styled(PlainText)`
+  font-weight: bold;
+  font-size: ${pxToRem(14)};
+`;

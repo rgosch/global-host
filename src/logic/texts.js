@@ -10,5 +10,6 @@ export const TEXTS = {
     equivalent: 'equivalente a',
     byMonth: '/mês*',
     hire: 'Contrate Agora',
+    freeDomain: '1 ano de domínio grátis',
   }
 }
