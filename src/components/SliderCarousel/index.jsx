@@ -29,13 +29,25 @@ function SliderCarousel() {
         >
           <Slider>
             <Slide index={0}>
-              <Plan icon={iconOneSVG} data={getPlanById(plans, PLANS[0])} />
+              <Plan
+                icon={iconOneSVG}
+                slug={PLANS[0]}
+                data={getPlanById(plans, PLANS[0])}
+              />
             </Slide>
             <Slide index={1}>
-              <Plan icon={iconTwoSVG} data={getPlanById(plans, PLANS[1])} />
+              <Plan
+                icon={iconTwoSVG}
+                slug={PLANS[1]}
+                data={getPlanById(plans, PLANS[1])}
+              />
             </Slide>
             <Slide index={2}>
-              <Plan icon={iconThreeSVG} data={getPlanById(plans, PLANS[2])} />
+              <Plan
+                icon={iconThreeSVG}
+                slug={PLANS[2]}
+                data={getPlanById(plans, PLANS[2])}
+              />
             </Slide>
           </Slider>
         </CarouselProvider>

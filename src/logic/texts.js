@@ -8,6 +8,7 @@ export const TEXTS = {
   ],
   carousel: {
     equivalent: 'equivalente a',
-    byMonth: '/mês*'
+    byMonth: '/mês*',
+    hire: 'Contrate Agora',
   }
 }

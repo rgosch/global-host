@@ -1,13 +1,29 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { COLORS } from 'visual/constants';
 import { pxToRem } from 'logic/pxToRem';
+import { Button } from 'visual/styles/Button';
 
 export const Container = styled.div`
   background-color: ${COLORS.white};
   margin: 10px;
   border: ${pxToRem(1)} solid ${COLORS.border};
   border-radius: ${pxToRem(3)};
+  position: relative;
+
+  ${p => p.isBestSeller && css`
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: ${pxToRem(10)};
+      background-color: ${COLORS.contrast};
+      border-top-left-radius: ${pxToRem(3)};
+      border-top-right-radius: ${pxToRem(3)};
+      position: absolute;
+      top: ${pxToRem(-8)};
+    }
+  `}
 `;
 
 export const Icon = styled.img`
@@ -16,7 +32,7 @@ export const Icon = styled.img`
 `;
 
 export const Section = styled.div`
-  padding: 30px 0;
+  padding: 30px;
 
   &:not(:last-child) {
     border-bottom: ${pxToRem(1)} solid ${COLORS.border};
@@ -64,4 +80,8 @@ export const ParcelAmount = styled.span`
   font-size: ${pxToRem(22)};
   font-weight: 800;
   margin-left: ${pxToRem(3)};
+`;
+
+export const Hire = styled(Button)`
+  margin: ${pxToRem(20)} 0;
 `;
