@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://pokedex.gosch.io/">
+  <a href="http://global-host.gosch.io/">
     <img alt="GlobalHost" src="./src/assets/img/logo-primary.svg" width="350" />
   </a>
 </p>
