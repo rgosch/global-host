@@ -3,8 +3,8 @@ import { pxToRem } from 'logic/pxToRem';
 import { COLORS } from 'visual/constants';
 
 export const Container = styled.label`
-  padding: ${pxToRem(10)};
-  border-radius: ${pxToRem(20)};
+  padding: ${pxToRem(10)} ${pxToRem(15)};
+  border-radius: ${pxToRem(42)};
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
