@@ -23,7 +23,7 @@ function SliderCarousel() {
       {ready && (
         <CarouselProvider
           naturalSlideWidth={300}
-          naturalSlideHeight={500}
+          naturalSlideHeight={400}
           visibleSlides={3}
           totalSlides={3}
         >

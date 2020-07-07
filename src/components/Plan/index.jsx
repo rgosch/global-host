@@ -8,6 +8,7 @@ import { TEXTS } from 'logic/texts';
 import { PLANS } from 'logic/constants';
 import { getPlanLink } from 'logic/link';
 
+import { Badge } from 'visual/styles/badge';
 import {
   Container,
   Icon,
@@ -21,6 +22,8 @@ import {
   ParcelAmount,
   Hire,
   FreeDomain,
+  SaveContainer,
+  SaveAmount,
 } from './styles';
 
 function Plan({ icon, data, slug }) {
@@ -62,6 +65,12 @@ function Plan({ icon, data, slug }) {
           {TEXTS.carousel.hire}
         </Hire>
         <FreeDomain>{TEXTS.carousel.freeDomain}</FreeDomain>
+        <SaveContainer>
+          <SaveAmount>
+            {TEXTS.carousel.saveAmount(formatAmount(discountAmount))}
+          </SaveAmount>
+          <Badge>{TEXTS.carousel.discount(discount)}</Badge>
+        </SaveContainer>
       </Section>
     </Container>
   );

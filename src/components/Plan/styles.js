@@ -24,6 +24,20 @@ export const Container = styled.div`
       top: ${pxToRem(-8)};
     }
   `}
+
+  ${p => p.isBestSeller && css`
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: ${pxToRem(5)};
+      background-color: ${COLORS.contrast};
+      border-bottom-left-radius: ${pxToRem(3)};
+      border-bottom-right-radius: ${pxToRem(3)};
+      position: absolute;
+      bottom: ${pxToRem(-5)};
+    }
+  `}
 `;
 
 export const Icon = styled.img`
@@ -89,4 +103,15 @@ export const Hire = styled(Button)`
 export const FreeDomain = styled(PlainText)`
   font-weight: bold;
   font-size: ${pxToRem(14)};
+`;
+
+export const SaveContainer = styled.div`
+  text-align: center;
+  margin-top: ${pxToRem(5)};
+`;
+
+export const SaveAmount = styled(PlainText)`
+  color: ${COLORS.primary};
+  display: inline-block;
+  margin-right: ${pxToRem(3)}
 `;
