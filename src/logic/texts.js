@@ -5,5 +5,9 @@ export const TEXTS = {
     { id: 'triennially', title: '3 anos' },
     { id: 'biennially', title: '1 ano' },
     { id: 'monthly', title: '1 mês' },
-  ]
+  ],
+  carousel: {
+    equivalent: 'equivalente a',
+    byMonth: '/mês*'
+  }
 }

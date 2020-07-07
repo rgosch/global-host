@@ -24,23 +24,44 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: ${pxToRem(18)};
+  font-size: ${pxToRem(22)};
   text-align: center;
   color: ${COLORS.primary};
-  font-weight: bold;
+  font-weight: 800;
   margin-top: 10px;
 `;
 
 export const TotalPrices = styled.div`
+  text-align: center;
+`;
+
+export const PlainText = styled.span`
   font-size: ${pxToRem(12)};
   text-align: center;
   color: ${COLORS.dark};
+  display: table;
+  margin: 0 auto;
 `;
 
-export const OldTotalPrice = styled.span`
+export const OldTotalPrice = styled(PlainText)`
   text-decoration: line-through;
+  display: inline;
 `;
 
-export const NewTotalPrice = styled.span`
+export const NewTotalPrice = styled(PlainText)`
   font-weight: bold;
+  display: inline;
+`;
+
+export const ParcelSection = styled.div`
+  color: ${COLORS.primary};
+  font-size: ${pxToRem(18)};
+  text-align: center;
+  margin-top: 5px;
+`;
+
+export const ParcelAmount = styled.span`
+  font-size: ${pxToRem(22)};
+  font-weight: 800;
+  margin-left: ${pxToRem(3)};
 `;

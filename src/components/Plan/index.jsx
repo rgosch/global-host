@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
 import { PlansContext } from 'contexts/PlansContext';
-import { formatAmount } from 'logic/format';
+import { formatAmount, getCurrency } from 'logic/format';
 import { getDiscountAmount } from 'logic/discount';
+import { TEXTS } from 'logic/texts';
 import {
   Container,
   Icon,
@@ -12,13 +13,21 @@ import {
   TotalPrices,
   OldTotalPrice,
   NewTotalPrice,
+  PlainText,
+  ParcelSection,
+  ParcelAmount,
 } from './styles';
 
 function Plan({ icon, data }) {
   const { period } = useContext(PlansContext);
   const { name, cycle } = data;
-  const { priceOrder } = cycle[period];
-  const discountAmount = getDiscountAmount(priceOrder, 40);
+  const { priceOrder, months } = cycle[period];
+  const discount = 40;
+  const discountAmount = getDiscountAmount(priceOrder, discount);
+  const amountWithDiscount = priceOrder - discountAmount;
+  const parcel = amountWithDiscount / months;
+  const currency = getCurrency();
+  const showNew = months > 1;
 
   return (
     <Container>
@@ -29,10 +38,18 @@ function Plan({ icon, data }) {
       <Section>
         <TotalPrices>
           <OldTotalPrice>{formatAmount(priceOrder)}</OldTotalPrice>
-          <NewTotalPrice>
-            {` ${formatAmount(priceOrder - discountAmount)}`}
-          </NewTotalPrice>
+          {showNew && (
+            <NewTotalPrice>
+              {` ${formatAmount(amountWithDiscount)}`}
+            </NewTotalPrice>
+          )}
         </TotalPrices>
+        <PlainText>{TEXTS.carousel.equivalent}</PlainText>
+        <ParcelSection>
+          {currency}
+          <ParcelAmount>{formatAmount(parcel, false)}</ParcelAmount>
+          {TEXTS.carousel.byMonth}
+        </ParcelSection>
       </Section>
     </Container>
   );
