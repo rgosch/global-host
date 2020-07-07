@@ -8,6 +8,8 @@
 </h1>
 The best Host for your business.
 
+<img alt="Screenshot of application" src="./screenshot.png" />
+
 ## Available Scripts
 
 In the project directory, you can run:
