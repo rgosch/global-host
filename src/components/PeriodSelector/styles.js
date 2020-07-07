@@ -10,4 +10,6 @@ export const Container = styled.div`
   background-color: ${COLORS.white};
   border-radius: ${pxToRem(20)};
   margin: 0 auto;
+  border: ${pxToRem(1)} solid ${COLORS.primary};
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 `;

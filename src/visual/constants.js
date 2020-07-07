@@ -5,6 +5,7 @@ export const COLORS = {
   tertiary: '#00E7A1',
   contrast: '#FF3900',
   dark: '#5A5A5A',
+  border: '#F4F2FF',
 };
 
 export const RESOLUTIONS = {
