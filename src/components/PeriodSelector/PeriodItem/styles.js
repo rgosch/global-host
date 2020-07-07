@@ -7,6 +7,7 @@ export const Container = styled.label`
   padding: ${pxToRem(10)} ${pxToRem(15)};
   display: grid;
   grid-template-columns: auto 1fr;
+  margin: ${pxToRem(-1.5)};
   align-items: center;
   &, label {
     cursor: pointer;
